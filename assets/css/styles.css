@@ -1,0 +1,57 @@
+html, body{
+    margin: 0;
+    background-color: #2f4f30;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.carta{
+    position: relative;
+    width: 180px;
+    left: 100px;
+    margin-left: -75px;
+    
+}
+
+#computadora-cartas, #jugador-cartas{
+    height: 350px;
+}
+
+.row {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px 120px 0px 120px;
+}
+
+.row_mt-2{
+    display: block;
+    text-align: center;
+    padding: 30px;
+}
+
+.btn-danger{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(207, 4, 4, 0.8);
+    font-weight: bold;
+}
+
+.btn-primary{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(4, 143, 207, 0.8);
+    font-weight: bold;
+}
