@@ -68,7 +68,7 @@ const turnoComp = (puntosMin) => {
         puntos[1].innerText = puntosComp;
 
         const imgCarta = document.createElement("img");
-        imgCarta.src = `/assets/cartas/${carta}.png`;
+        imgCarta.src = `assets/cartas/${carta}.png`;
 
         divCartasComp.append(imgCarta);
         imgCarta.classList.add("carta");
@@ -100,7 +100,7 @@ btnPedir.addEventListener("click", () => {
     puntos[0].innerText = puntosJug;
 
     const imgCarta = document.createElement("img");
-    imgCarta.src = `/assets/cartas/${carta}.png`;
+    imgCarta.src = `assets/cartas/${carta}.png`;
 
     divCartasJug.append(imgCarta);
     imgCarta.classList.add("carta");
