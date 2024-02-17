@@ -51,7 +51,7 @@ const valorCarta = (carta) => {
 }
 
 const valorA = () => {
-    return (puntosJug >= 12) ? return 1:    return 11;
+    return (puntosJug >= 12) ? 1: 11;
 }
 
 //Turno Computadora
