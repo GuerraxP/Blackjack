@@ -20,7 +20,7 @@
 		<div class="row container mt-2">
 			<div class="col">
 				<h1>Jugador - <small>0</small></h1>
-				<div id="jugador-cartas">
+				<div id="jugador-cartas" class="divCartas">
 					<!-- <img class="carta" src="assets/cartas/2C.png"> -->
 
 				</div>
@@ -30,7 +30,7 @@
 		<div class="row container mt-2">
 			<div class="col">
 				<h1>Computadora - <small>0</small></h1>
-				<div id="computadora-cartas">
+				<div id="computadora-cartas" class="divCartas">
 					<!-- <img class="carta" src="assets/cartas/3C.png"> -->
 				</div>
 			</div>
@@ -39,12 +39,18 @@
 		<div class="row_mt-2">
 			<div class="col text-center">
 				<button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
-				<button id="btnPedir" class="btn btn-primary">Pedir cartas</button>
-				<button id="btnDetener" class="btn btn-primary">Detener</button>
+				<button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir cartas</button>
+				<button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
 			</div>
 		</div>
 
 		<script src="assets/js/underscore-umd-min.js"></script>
-		<script src="assets/js/juego.js"></script>
+		<script src="assets/js/juego-min.js"></script>
+
+		<script>
+			document.querySelector("#btnNuevo").addEventListener("click", ()=>{
+				mymodule.nuevoJuego();
+			})
+		</script>
 	</body>
 </html>
